@@ -116,6 +116,7 @@ setty = { version = "*", features = [
     "derive-serialize",
     "derive-jsonschema",
     "derive-validate",
+    "derive-async-graphql",
     # Pick one: A case for struct fields (applies `#[serde(renameAll = "...")]`)
     "case-fields-lower",
     "case-fields-pascal",

@@ -32,6 +32,8 @@ derive-jsonschema = [
     "schemars/derive",
 ]
 derive-validate = ["setty-derive/derive-validate", "dep:validator"]
+# TODO: This currently only works for extra types, not config objects
+derive-async-graphql = ["dep:async-graphql"]
 
 case-fields-lower = ["setty-derive/case-fields-lower"]
 case-fields-pascal = ["setty-derive/case-fields-pascal"]
@@ -79,6 +81,7 @@ serde_json = { version = "1", default-features = false, features = [
 thiserror = { version = "2", default-features = false }
 
 # Optional
+async-graphql = { optional = true, version = "7", default-features = false }
 bytesize = { optional = true, version = "2", default-features = false, features = [
     "std",
     "serde",
